@@ -1,0 +1,36 @@
+[33mcommit 50ea936654fb244eeaf961f7c73c1282f3fc7090[m
+Merge: 3ab129d 1bf250c
+Author: nwn <ducnghiuit@gmail.com>
+Date:   Thu May 21 01:43:41 2015 +0700
+
+    Config
+
+[33mcommit 3ab129d6d5050569f89982cf35348151052e9e65[m
+Author: nwn <ducnghiuit@gmail.com>
+Date:   Thu May 21 01:40:59 2015 +0700
+
+    No comment
+
+[33mcommit 1bf250c589e0ff44d30c4d9307a1788d719bd003[m
+Author: nwn <ducnghiuit@gmail.com>
+Date:   Fri Apr 24 10:26:06 2015 +0700
+
+    Configured for deployment to Heroku
+
+[33mcommit d30f451b09b02b0c3e274da0f71ff7b2d9b75bc3[m
+Author: nwn <ducnghiuit@gmail.com>
+Date:   Mon Apr 20 15:40:59 2015 +0700
+
+    Implement Login bootstrap
+
+[33mcommit 7f6b83cdb7427ddbcc8ff7bb47c371bb55ce68e1[m
+Author: nwn <ducnghiuit@gmail.com>
+Date:   Mon Apr 20 15:40:59 2015 +0700
+
+    Implement haml bootstrap
+
+[33mcommit 913b19fe9156892d30b44923b5badafde2719c22[m
+Author: nwn <ducnghiuit@gmail.com>
+Date:   Mon Apr 20 10:18:58 2015 +0700
+
+    first commit

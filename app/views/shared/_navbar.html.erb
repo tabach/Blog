@@ -1,0 +1,14 @@
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+    <div class="navbar-header">
+<%= form_tag destroy_user_session_path, method: :delete do %>
+<%= submit_tag 'Logout',:class => "btn btn-default navbar-btn" %>
+<% end %>
+</div>
+<% if user_signed_in? %>
+<%= form_tag edit_user_registration_path, method: :get do %>
+<%= submit_tag 'Edit Info',:class => "btn btn-default navbar-btn" %>
+<% end %>
+<% end %>
+</div>
+</nav>

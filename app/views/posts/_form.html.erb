@@ -1,0 +1,23 @@
+<%= form_for @post, html: { class: "form-horizontal", style: "display:inline;" } do |f| %>
+  <div class="modal-body">
+    <ul class="errors"></ul>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br>
+    <%= f.cktext_area :body, :class => 'someclass', :ckeditor => {:language => 'vn'} %>
+  </div>
+   <div class="field">
+      <%= f.label :image %><br>
+      <%= f.file_field :image %> 
+  <div class="actions">
+    <%= f.submit class: "btn btn-primary" %>
+    <%= link_to "Cancel", "#", class: "btn btn-primary", data: {dismiss: "modal"} %>
+  </div>
+</div>
+<% end %>
+
+
+

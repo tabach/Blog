@@ -1,0 +1,51 @@
+
+ <div class="container">    
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign In</div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
+                    </div>
+                     <div style="padding-top:30px" class="panel-body" >
+
+                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                            
+                        <form id="new_user" class="form-horizontal" role="form" action="/users" method="post" accept-charset="UTF-8">
+                            <input name="utf8" type="hidden" value="&#x2713;" />
+                            <input type="hidden" name="authenticity_token" value="8otvE3RCbO/ULJVzWLEpGYuOPWD73kNhQFOf/+mdyh4IgAS28F6igonLycrKNwvJ9NCwwUSeE7EtfgN0NyrIyg==" />       
+                            <div style="margin-bottom: 25px" class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                               <input id="user_email" type="email" class="form-control" name="user[email]" value="" placeholder="Username or email">    
+                            </div>
+                            <div style="margin-bottom: 25px" class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="user-password" type="password" class="form-control" name="user[password]" placeholder="Password" autocomplete="off">
+                            </div> 
+                               <div style="margin-bottom: 25px" class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="user_password_confirmation" type="password" class="form-control" name="user[password_confirmation]" placeholder="Password confirmation" autocomplete="off">
+                            </div> 
+
+                                <div style="margin-top:10px" class="form-group">
+                                    <!-- Button -->
+                                    <div class="col-sm-12 controls">
+                                      <input type="submit" value="Sign Up" name="commit" class="btn btn-primary"></input>
+                                      <a id="btn-fblogin" href="/users/auth/facebook" class="btn btn-primary">Login with Facebook</a>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group" style="padding-top:10px">
+                                    <div class="col-md-12 control">
+                                        <div style="border-top: padding-top:20px; font-size:85%" >
+                                            Have an account! 
+                                        <a href="/users/sign_in">
+                                            Sign In Here
+                                        </a>
+                                        </div>  
+                                </div> 
+                        </form> <!--form login boot -->
+                       </div>    
+            </div>
+        </div> <!-- end loginbox -->
+    </div> <!--end container -->

@@ -1,0 +1,57 @@
+<div class="container">
+<div class="col-sm-6 blog-main">
+<p id="notice"><%= notice %></p>
+<%= "#{@post.impressionist_count} views so far!" %>
+<p>
+  <strong>Title:</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @post.body.html_safe %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @post.user_id %>
+</p>
+
+<h4>Comments</h4>
+<% @post.comments.each do |comment| %>
+    <p>
+      <strong>Commenter:</strong>
+      <%= comment.commenter %>
+    </p>
+
+    <p>
+      <strong>Comment:</strong>
+      <%= comment.body.html_safe %>
+    </p>
+    <p>
+      <%= link_to 'Destroy Comment', [comment.post, comment],
+                  method: :delete,
+                  data: { confirm: 'Are you sure?' } %>
+    </p>
+<% end %>
+<!--- Comment -->
+<h2>Add a comment:</h2>
+<%= form_for([@post, @post.comments.build]) do |f| %>
+  <p>
+    <%= f.label :body %><br>
+    <%= f.cktext_area :body, :class => 'someclass', :ckeditor => {:language => 'vn'} %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+
+  <%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
+<% end %>
+</div>
+<div class="col-sm-6 blog-main">
+<p><strong>Image:</strong><br>
+<%= image_tag @post.image.url,size: "300x300" %>
+</p>  
+</div>
+

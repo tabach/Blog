@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails Blog: development" uuid="ed8038df-9750-4a51-bb43-7ef00cc5d917">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails Blog: test" uuid="7ded7923-8270-482c-bcba-5f66bc90510c">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails Blog: production" uuid="6952d2c6-5405-4664-9f38-8af335adc023">
+      <first-sync>true</first-sync>
+      <user-name>Blog</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfe8dfe6dfe5dfeddff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+  </component>
+</project>
